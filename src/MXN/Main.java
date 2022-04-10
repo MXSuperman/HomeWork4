@@ -87,10 +87,10 @@ public class Main {
         // Задание 4
 //
         int[] setsUs = new int[]{1, 2, 3};
-        for (int i = 0; i < setsUs.length; i++)
-            if (setsUs[i] % 2 !=0) {
-                System.out.println(i);
-            } else {
-                    System.out.println(setsUs[i] + ", "); }
-            }
+        for (int i = 0; i < setsUs.length; i++) {
+            setsUs[i] += 1;
+            System.out.println(setsUs[i] + ", ");
+
+        }
     }
+}
