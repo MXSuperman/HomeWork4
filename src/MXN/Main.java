@@ -88,9 +88,12 @@ public class Main {
 //
         int[] setsUs = new int[]{1, 2, 3};
         for (int i = 0; i < setsUs.length; i++) {
-            setsUs[i] += 1;
+            if (setsUs[i] % 2 != 0)
+                setsUs[i] += 1;
+            if (i != setsUs.length - 1)
             System.out.println(setsUs[i] + ", ");
-
+         else
+            System.out.println(setsUs[i]);
         }
     }
 }
